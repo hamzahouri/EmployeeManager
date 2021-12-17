@@ -3,6 +3,13 @@ package manager;
 public class HourlyEmployee extends Employee implements Displayable {
 	private double hour_rate;
 	private int no_of_hour;
+	
+	
+	public HourlyEmployee(String name, String address, int ssn, Gender sex, double hour_rate, int no_of_hour) {
+		super(name, address, ssn, sex);
+		this.hour_rate = hour_rate;
+		this.no_of_hour = no_of_hour;
+	}
 	public double getHour_rate() {
 		return hour_rate;
 	}

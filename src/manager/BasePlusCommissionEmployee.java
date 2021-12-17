@@ -2,6 +2,12 @@ package manager;
 
 public class BasePlusCommissionEmployee extends CommissionEmployee{
 	
+	public BasePlusCommissionEmployee(String name, String address, int ssn, Gender sex, double gross_sales,
+			double commission_rate) {
+		super(name, address, ssn, sex, gross_sales, commission_rate);
+		// TODO Auto-generated constructor stub
+	}
+
 	double base;
 
 	public double getBase() {

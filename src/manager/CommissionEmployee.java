@@ -4,6 +4,14 @@ public class CommissionEmployee extends Employee implements Displayable{
 	
 	private double gross_sales;
 	private double commission_rate;
+	
+	
+	public CommissionEmployee(String name, String address, int ssn, Gender sex, double gross_sales,
+			double commission_rate) {
+		super(name, address, ssn, sex);
+		this.gross_sales = gross_sales;
+		this.commission_rate = commission_rate;
+	}
 	public double getGross_sales() {
 		return gross_sales;
 	}
